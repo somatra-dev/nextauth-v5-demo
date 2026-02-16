@@ -1,5 +1,19 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+### env
+```bash
+# cryptographic key Auth.js uses to protect auth data.
+AUTH_SECRET={KEY_GENERATE} # Added by `npx auth`. Read more: https://cli.authjs.dev
+
+
+AUTH_GITHUB_ID={CLIENT_ID}
+AUTH_GITHUB_SECRET={CLIENT_SECRET}
+
+
+callback-endpoint: http://localhost:3000/api/auth/callback/github
+
+```
+
 ## Getting Started
 
 First, run the development server:
